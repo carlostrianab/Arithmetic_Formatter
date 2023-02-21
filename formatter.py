@@ -17,9 +17,6 @@ def arithmetic_arranger(problems):
     #Each operand has a maximum of 4 digits.
     if len(num1) > 4 or len(num2) > 4:
       return "Error: Numbers cannot be more than four digits."
-    #The operator is different from '-' or '+'.
-    if operator != '-' or '+':
-      return "Error: Operator must be '+' or '-'."
       
   #FORMATTING
   #Align to the right depending on the largest numer in the equation 
@@ -107,3 +104,7 @@ def arithmetic_arranger(problems):
 
    
   return arranged_problems
+
+#TESTING
+
+print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
